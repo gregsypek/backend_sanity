@@ -30,12 +30,17 @@ export default {
 			type: "string",
 		},
 		{
-			name: "imgUrl",
-			title: "ImageUrl",
-			type: "image",
-			options: {
-				hotspot: true,
-			},
+			name: "imgUrls",
+			title: "ImageUrls",
+			type: "array",
+			of: [
+				{
+					type: "image",
+					options: {
+						hotspot: true,
+					},
+				},
+			],
 		},
 
 		{
